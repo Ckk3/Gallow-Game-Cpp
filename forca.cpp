@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 
   while (word[i] != '\0')
   {
-    cout << "Aqui";
+    //cout << "Aqui";
     i++;
     length++;
   }
@@ -46,12 +46,12 @@ int main(int argc, char const *argv[])
       cout << secret[i];
     }
 
-    cout << "\n\n Type you letter: ";
+    cout << "\n\n Type one letter: ";
     cin >> letter[0];
 
     for (i = 0; i < length; i++)
     {
-      if (word[i] == letter[0])
+      if (tolower(word[i]) == tolower(letter[0]))
       {
         hit = true;
         secret[i] = word[i];
